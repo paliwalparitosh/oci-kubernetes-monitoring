@@ -21,8 +21,8 @@ locals {
     "oci-onm-mgmt-agent.deployMetricServer"              = var.opt_deploy_metric_server
 
     # endpoint override for internal testing #INTERNAL
-    "oci-onm-logan.ociLAEndpoint" = "https://stage.loganalytics.us-ashburn-1.oci.oraclecloud.com"
-    "oci-onm-logan.fluentd.ociLoggingAnalyticsOutputPlugin.endpoint" = "https://stage.loganalytics.us-ashburn-1.oci.oraclecloud.com"
+    "oci-onm-logan.ociLAEndpoint" = "https://preprod.loganalytics.us-phoenix-1.oci.oraclecloud.com"
+    "oci-onm-logan.fluentd.ociLoggingAnalyticsOutputPlugin.endpoint" = "https://preprod.loganalytics.us-phoenix-1.oci.oraclecloud.com"
   }
 
   mushop_helm_inputs = {
