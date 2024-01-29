@@ -19,6 +19,10 @@ locals {
     #oci-onm-mgmt-agent
     "oci-onm-mgmt-agent.mgmtagent.installKeyFileContent" = var.mgmt_agent_install_key_content
     "oci-onm-mgmt-agent.deployMetricServer"              = var.opt_deploy_metric_server
+
+    # endpoint override for internal testing #INTERNAL
+    "oci-onm-logan.ociLAEndpoint" = "https://stage.loganalytics.us-ashburn-1.oci.oraclecloud.com"
+    "oci-onm-logan.fluentd.ociLoggingAnalyticsOutputPlugin.endpoint" = "https://stage.loganalytics.us-ashburn-1.oci.oraclecloud.com"
   }
 
   mushop_helm_inputs = {
